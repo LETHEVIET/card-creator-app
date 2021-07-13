@@ -117,6 +117,8 @@ class CardCreator extends Component {
         return (
             <div id="cardCreator">
                 <FormInfo handleData={this.CreatingCard}></FormInfo>
+                {this.state.card !== "" ?
+                    <div>
                         <div>
                             <CardResult card={this.state.card}/>
                         </div>
@@ -129,6 +131,10 @@ class CardCreator extends Component {
                                 <li className="list-inline-item"><img onClick={this.download} className="shareicon dl" src="assets/img/_Path_%20(1).svg"/></li>
                             </ul>
                         </div>
+                    </div>  :
+                    <div></div>  
+                }
+                 
             </div>
         );
     }
