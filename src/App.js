@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import PageWraper from './Pages/pagewraper';
+import About from './Components/about/about';
+import CardCreator from './Components/cardCreator/carCreator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PageWraper>
+        <About></About>
+        <CardCreator></CardCreator>
+      </PageWraper>
     </div>
   );
 }
