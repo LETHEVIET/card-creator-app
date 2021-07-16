@@ -16,7 +16,7 @@ class PageWraper extends Component {
                         </div>
                     </div>
                 </nav>
-                <div id="banner"><img style={{width: "100%"}} src="assets/img/loki-tv-series-sylvie-sophia-di-martino-hd-wallpaper-1920x1080-uhdpaper.com-802.0_a.jpg" /> </div>
+                <div id="banner"><img style={{width: "100%"}} src="assets/img/H_HA9270.jpg" /> </div>
 
                 {this.props.children}
 
