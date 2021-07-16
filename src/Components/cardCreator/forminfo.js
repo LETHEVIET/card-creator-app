@@ -211,8 +211,8 @@ class FormInfo extends Component {
                             <div className="text-center" id="buttonarea">
                                 <div class="form-row">
                                     <div class="col"><button class="btn btn-primary" onClick={this.handleClearForm}>Clear</button></div>
-                                    <div class="col"><button class="btn btn-primary" type="submit">Đăng ký</button></div>
-                                    <div class="col"><button class="btn btn-primary" onClick={this.handleTestFill}>TestFill</button></div>
+                                    <div class="col"><button class="btn btn-primary" type="submit">Tạo thẻ</button></div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -224,3 +224,4 @@ class FormInfo extends Component {
 }
 
 export default FormInfo;
+//<div class="col"><button class="btn btn-primary" onClick={this.handleTestFill}>TestFill</button></div>

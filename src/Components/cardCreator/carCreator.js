@@ -13,7 +13,8 @@ class CardCreator extends Component {
 
         this.state = {
             card: "",
-            display: false
+            display: false,
+            imgName: ""
         }
 
         this.imge = "";
@@ -45,6 +46,7 @@ class CardCreator extends Component {
     
     CreatingCard = (person) => {
         console.log(person);
+        this.setState({imgName: person.id});
         //const qrCode = useQrCode(person.id+";"+person.name+";"+person.clan);
         var qrcode = "";
         QRCode.toDataURL(person.id+";"+person.name+";"+person.clan,{errorCorrectionLevel: 'L', width:'90px'} ,function (err, url) {
@@ -110,7 +112,7 @@ class CardCreator extends Component {
 
     download = () =>{
         console.log("download");        
-        this.saveAs(this.state.card, 'exported-vis.png') 
+        this.saveAs(this.state.card, this.state.imgName + ".png") 
     }
 
     render () {
